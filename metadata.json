@@ -1,0 +1,6 @@
+{
+  "name": "Savorly",
+  "description": "Weekly household meal planning, recipe library, and smart grocery list.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
