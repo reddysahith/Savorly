@@ -1,0 +1,2 @@
+import {GroceryItem} from '../types/grocery'; import {groceryItems} from './mockData';
+export const groceryService={async list():Promise<GroceryItem[]>{return Promise.resolve(groceryItems)},async toggle(id:string,checked:boolean):Promise<GroceryItem>{const item=groceryItems.find(x=>x.id===id)!;item.checked=checked;return item},async add(item:GroceryItem):Promise<GroceryItem>{groceryItems.push(item);return item}};

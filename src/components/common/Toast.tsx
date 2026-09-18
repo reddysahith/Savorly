@@ -1,0 +1,1 @@
+export function Toast({message}: {message:string}){return <div role="status" style={{position:'fixed',bottom:24,right:24,background:'#20231f',color:'white',padding:'12px 16px',borderRadius:12,zIndex:10}}>{message}</div>}

@@ -1,0 +1,1 @@
+export type MealSlotKey='breakfast'|'lunch'|'dinner'|'snack'; export interface MealEntry { breakfast?:string; lunch?:string; dinner?:string; snack?:string }; export interface MealPlan { id:string; householdId:string; weekStartDate:string; entries:Record<string,MealEntry> }

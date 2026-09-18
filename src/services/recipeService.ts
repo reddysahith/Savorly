@@ -1,0 +1,2 @@
+import {Recipe} from '../types/recipe'; import {recipes} from './mockData';
+export const recipeService={async list():Promise<Recipe[]>{return Promise.resolve(recipes)},async get(id:string):Promise<Recipe>{return Promise.resolve(recipes.find(r=>r.id===id)??recipes[0])},async save(recipe:Recipe):Promise<Recipe>{return Promise.resolve(recipe)},async importFromUrl(url:string):Promise<Recipe>{await new Promise(r=>setTimeout(r,1200));return {...recipes[0],id:'draft',title:url.includes('miso')?'Miso butter salmon':'Green goddess pasta'}}};

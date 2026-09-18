@@ -1,0 +1,1 @@
+export function MealSlot({label,meal}:{label:string;meal?:string}){return <div><div className="slot-label">{label}</div>{meal?<div className="slot">{meal}</div>:<div style={{color:'#b7beb4',fontSize:13,marginTop:8}}>+ Add</div>}</div>}

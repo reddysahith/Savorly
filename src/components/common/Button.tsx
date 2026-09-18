@@ -1,0 +1,1 @@
+import {ButtonHTMLAttributes} from 'react'; export function Button({children,className='',...p}:ButtonHTMLAttributes<HTMLButtonElement>){return <button className={`btn ${className}`} {...p}>{children}</button>}

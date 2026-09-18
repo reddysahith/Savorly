@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react'; import {MealPlan} from '../types/planner'; import {plannerService} from '../services/plannerService'; export function usePlanner(){const [plan,setPlan]=useState<MealPlan|null>(null);useEffect(()=>{plannerService.getWeek().then(setPlan)},[]);return {plan,setPlan}};

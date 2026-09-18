@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react'; import {Recipe} from '../types/recipe'; import {recipeService} from '../services/recipeService'; export function useRecipes(){const [data,setData]=useState<Recipe[]>([]);useEffect(()=>{recipeService.list().then(setData)},[]);return {recipes:data}};
